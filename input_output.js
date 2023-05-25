@@ -30,11 +30,11 @@ io.disableButton = function (id){
 }
 // modification for turning elements visible, invisible
 io.showElement = function (id){
-  document.getElementById(id).style.visibility = "visible"
+  document.getElementById(id).visibility = "visible"
 }
 
 io.hideElement = function (id){
-  document.getElementById(id).style.visibility = "hidden"
+  document.getElementById(id).visibility = "hidden"
   }
 
 // interactive list items
@@ -53,9 +53,9 @@ io.renderListIntoElement = function (id, list, selectedIndex, selectFunction, de
   }
   io.showStage = function (game){
   game.stages.forEach(function(stage){
-    document.getElementById(stage).style.display = "none"
+    document.getElementById(stage).display = "none"
   });
-    document.getElementById(game.currentStage).style.display = "block"
+    document.getElementById(game.currentStage).display = "block"
     this.showPanel(game)
 }
   
