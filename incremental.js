@@ -13,12 +13,8 @@ const GameInstance = class {
   
       this.resource1 = 0;
       this.resource2 = 0;
+      this.resource3 = 0;
         
-      
-        
-      this.collectorsProtected = 0;
-      this.findersProtected = 0;
-      this.gardenCollectors = 0;
       
     }
     
@@ -27,7 +23,8 @@ const GameInstance = class {
     
     // the following functions are to be called from buttons in the index.html
     gainResource1(){ this.resource1 +=1; this.updateDisplay();}
-    gainResource2(){ this.resource2 +=2; this.resource1 -=5;this.updateDisplay();}
+    gainResource2(){ this.resource2 +=1; this.resource1 -=5;this.updateDisplay();}
+    gainResource3(){ this.resource3 +=1; this.resource1 -=3; this.resource2 -=1; this.updateDisplay()}
     
     runResource2Work(){
         this.resource1 += this.resource2;
@@ -43,12 +40,14 @@ const GameInstance = class {
     updateDisplay(){
       io.writeValueIntoClass(this.resource1, "resource1Number")
       io.writeValueIntoClass(this.resource2, "resource2Number")
+      io.writeValueIntoClass(this.resource3, "resource3Number")
+      io.writeValueIntoClass(this.resource3, "resource4Number")
     }
     
   };
   
   
-  // this function forom JQuery waits until the web page is fully loaded before triggering the start of the game
+  // this function from JQuery waits until the web page is fully loaded before triggering the start of the game
   $( document ).ready(function() {
     game = new GameInstance();
     game.narrativeManager.setup();

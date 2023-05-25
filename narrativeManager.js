@@ -14,21 +14,30 @@ const narrativeManager = class {
       unlock:function(){io.showElement("resource2Row")}, 
       report: function(){
         io.appendIntoElement("You can bribe seagulls now.", "reports");
-        io.writeIntoElement ("Updated Name", "era");
         }
     },
     {
+        triggered: false,
+        test: function(data){return data.resource2 >= 10}, 
+        unlock:function(){io.showElement("resource3Row")}, 
+        report: function(){
+          io.appendIntoElement("Assign seagulls to gather food.", "reports");
+          }
+      },
+    {
       triggered: false,
-      test: function(data){return data.resource2 >= 10}, 
+      test: function(data){return data.resource2 >= 30}, 
       unlock:function(){io.showElement("showPanel2")},  
-      report: function(){io.appendIntoElement("Your seagulls are ready to conquer!", "reports");}
+      report: function(){io.appendIntoElement("Your seagulls are ready to conquer! Or run away. Take a bet.", "reports");}
     },
     ]
     }
     
     setup(){
       io.hideElement("resource2Row")
+      io.hideElement("resource3Row")
       io.hideElement("showPanel2")
+      io.hideElement("resource4Number")
     }
   
   
