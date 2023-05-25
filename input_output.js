@@ -81,9 +81,9 @@ io.renderListIntoElementUI = function (id, list, controlButtons, toggleFunction)
 
 io.showStage = function (game){
     game.stages.forEach(function(stage){
-      document.getElementById(stage).style.display = "none"
+      document.getElementById(stage).display = "none"
     });
-      document.getElementById(game.currentStage).style.display = "block"
+      document.getElementById(game.currentStage).display = "block"
       this.showPanel(game)
   }
 
