@@ -6,8 +6,6 @@ const GameInstance = class {
       this.currentStage = "stage1"; 
       this.panels = {
         "stage1": ["panel1", "panel2", "panel3"],
-        "stage2": ["panel2-1"],
-        "stage3": ["panel3-1"]
       }
       this.currentPanel = "panel1";
   

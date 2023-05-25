@@ -34,7 +34,7 @@ io.showElement = function (id){
 }
 
 io.hideElement = function (id){
-  document.getElementById(id).visibility = "hidden"
+  document.getElementById(id).style.visibility = "hidden"
   }
 
 // interactive list items
@@ -81,15 +81,15 @@ io.renderListIntoElementUI = function (id, list, controlButtons, toggleFunction)
 
 io.showStage = function (game){
     game.stages.forEach(function(stage){
-      document.getElementById(stage).display = "none"
+      document.getElementById(stage).style.display = "none"
     });
-      document.getElementById(game.currentStage).display = "block"
+      document.getElementById(game.currentStage).style.display = "block"
       this.showPanel(game)
   }
 
 io.showPanel = function (game){
   game.panels[game.currentStage].forEach(function(panel){
-    document.getElementById(panel).display = "none"
+    document.getElementById(panel).style.display = "none"
   });
-    document.getElementById(game.currentPanel).display = "block"
+    document.getElementById(game.currentPanel).style.display = "block"
 }
