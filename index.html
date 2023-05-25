@@ -32,44 +32,44 @@ display: inline-block;
 <div class="stage" id="stage1" style="z-index: 1"> 
 
 
-<div class="panel" id="panel1"> 
-    <h1> <span id=era>Calling of the Gulls</span></h1>
-    <button onclick=game.swichPanels("panel1") id="showPanel1"> Calling</button>
-    <button onclick=game.swichPanels("panel2") id="showPanel2"> Conquering</button>
-    <table>
-        <tr> 
-            <td>
-                <table>
-                    <tr>
-                        <td> Found Food</td> 
-                        <td> </td> 
-                        <td class="resource1Number"></td>
-                        <td>
-                            <button onclick=game.gainResource1()> Find Food</button>
-                        </td>
-                    </tr>
+    <div class="panel" id="panel1"> 
+        <h1> <span id=era>Calling of the Gulls</span></h1>
+        <button onclick=game.swichPanels("panel1") id="showPanel1"> Calling</button>
+        <button onclick=game.swichPanels("panel2") id="showPanel2"> Conquering</button>
+        <table>
+            <tr> 
+                <td>
+                    <table>
+                        <tr>
+                            <td> Found Food</td> 
+                            <td> </td> 
+                            <td class="resource1Number"></td>
+                            <td>
+                                <button onclick=game.gainResource1()> Find Food</button>
+                            </td>
+                        </tr>
 
-                    <tr id="resource2Row">
-                        <td> Seagulls</td> 
-                        <td></td> 
-                        <td class="resource2Number"></td>
-                        <td>
-                            <button onclick=game.gainResource2()> Bribe Seagulls</button>
-                        </td>
-                        <td>Cost 5 Food</td>
-                    </tr>
+                        <tr id="resource2Row">
+                            <td> Seagulls</td> 
+                            <td></td> 
+                            <td class="resource2Number"></td>
+                            <td>
+                                <button onclick=game.gainResource2()> Bribe Seagulls</button>
+                            </td>
+                            <td>Cost 5 Food</td>
+                        </tr>
 
-                    <tr id="resource3Row">
-                        <td> Food Grabbers</td> 
-                        <td></td> 
-                        <td class="resource3Number"></td>
-                        <td>
-                            <button onclick=game.gainResource3()> Train Seagull</button>
-                        </td>
-                        <td>Cost 1 Seagull + 3 Food; 1 Food found every 10 seconds</td>
-                    </tr>
-    </table>
-
+                        <tr id="resource3Row">
+                            <td> Food Grabbers</td> 
+                            <td></td> 
+                            <td class="resource3Number"></td>
+                            <td>
+                                <button onclick=game.gainResource3()> Train Seagull</button>
+                            </td>
+                            <td>Cost 1 Seagull + 3 Food; 1 Food found every 10 seconds</td>
+                        </tr>
+        </table>
+    </div>
 
 </div>
 
