@@ -13,7 +13,7 @@ const narrativeManager = class {
       test: function(data){return data.resource1 >= 10}, 
       unlock:function(){io.showElement("resource2Row")}, 
       report: function(){
-        io.appendIntoElement("You have progressed far enough to discover R2", "reports");
+        io.appendIntoElement("You can bribe seagulls now.", "reports");
         io.writeIntoElement ("Updated Name", "era");
         }
     },
@@ -21,7 +21,7 @@ const narrativeManager = class {
       triggered: false,
       test: function(data){return data.resource2 >= 10}, 
       unlock:function(){io.showElement("showPanel2")},  
-      report: function(){io.appendIntoElement("You unlocked a new dimension of management", "reports");}
+      report: function(){io.appendIntoElement("Your seagulls are ready to conquer!", "reports");}
     },
     ]
     }
@@ -29,7 +29,6 @@ const narrativeManager = class {
     setup(){
       io.hideElement("resource2Row")
       io.hideElement("showPanel2")
-      io.hideElement("showPanel3")
     }
   
   

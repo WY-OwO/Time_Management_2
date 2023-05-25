@@ -1,5 +1,5 @@
 <!DOCTYPEhtml><head>
-<title> Fun-gi</title>
+<title> Seagull Nation</title>
 
 
 <script src="jquery-1.11.2.min.js"></script>
@@ -33,9 +33,9 @@ display: inline-block;
 
 
 <div class="panel" id="panel1"> 
-    <h1> <span id=era>Consume</span></h1>
-    <button onclick=game.swichPanels("panel1") id="showPanel1"> Consume</button>
-    <button onclick=game.swichPanels("panel2") id="showPanel2"> Spread</button>
+    <h1> <span id=era>Calling of the Gulls</span></h1>
+    <button onclick=game.swichPanels("panel1") id="showPanel1"> Calling</button>
+    <button onclick=game.swichPanels("panel2") id="showPanel2"> Conquering</button>
     <table>
         <tr> 
             <td>
@@ -50,23 +50,23 @@ display: inline-block;
                     </tr>
 
                     <tr id="resource2Row">
-                        <td> Energy</td> 
+                        <td> Seagulls</td> 
                         <td></td> 
                         <td class="resource2Number"></td>
                         <td>
-                            <button onclick=game.gainResource2()> Consume Food</button>
+                            <button onclick=game.gainResource2()> Bribe Seagulls</button>
                         </td>
                         <td>Cost 5 Food</td>
                     </tr>
 
                     <tr id="resource3Row">
-                        <td> Usable Cells</td> 
+                        <td> Food Grabbers</td> 
                         <td></td> 
                         <td class="resource3Number"></td>
                         <td>
-                            <button onclick=game.gainResource3()> Multiply</button>
+                            <button onclick=game.gainResource3()> Train Seagull</button>
                         </td>
-                        <td>Cost 10 Energy</td>
+                        <td>Cost 1 Seagull + 3 Food; 1 Food found every 10 seconds</td>
                     </tr>
     </table>
 
@@ -77,9 +77,9 @@ display: inline-block;
 
 <!-- delete the following 2 panels if you structuring with sequential stages -->
 <div class="panel"  id="panel2">
-    <button onclick=game.swichPanels("panel1") id="showPanel1"> Consume</button>
-    <button onclick=game.swichPanels("panel2") id="showPanel2"> Spread</button> 
-    <h1> Spread</h1>
+    <button onclick=game.swichPanels("panel1") id="showPanel1"> Calling</button>
+    <button onclick=game.swichPanels("panel2") id="showPanel2"> Conquering</button> 
+    <h1> Conquering of the Nations</h1>
     <h3>How far can you spread? </h3>
     <table>
         <tr> 
@@ -91,22 +91,17 @@ display: inline-block;
                         <td class="resource1Number"></td>
                     </tr>
                     <tr>
-                        <td> Energy</td>
+                        <td> Seagulls</td>
                         <td> </td>
                         <td class="resource2Number"></td>
                     </tr>
 
-                    <tr>
-                        <td> Usable Cells</td>
-                        <td> </td>
-                        <td class="resource3Number"></td>
-                    </tr>
     </table>
     <table>
         <tr>
             <td>1</td>
             <td> </td>
-            <td><button class="expand" onclick="game.expand(1, 1)">Cell</button></td>
+            <td><button class="expand" onclick="game.expand(1, 1)">Seagull</button></td>
         </tr>
     </table>
                     
