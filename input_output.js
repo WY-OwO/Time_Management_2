@@ -51,7 +51,13 @@ io.renderListIntoElement = function (id, list, selectedIndex, selectFunction, de
   }
   document.getElementById(id).innerHTML = value;
   }
-  
+  io.showStage = function (game){
+  game.stages.forEach(function(stage){
+    document.getElementById(stage).style.display = "none"
+  });
+    document.getElementById(game.currentStage).style.display = "block"
+    this.showPanel(game)
+}
   
 // interactive list items radio buttons
 io.renderListIntoElementUI = function (id, list, controlButtons, toggleFunction){
@@ -73,6 +79,13 @@ io.renderListIntoElementUI = function (id, list, controlButtons, toggleFunction)
 
 // panel and stage display controls
 
+io.showStage = function (game){
+    game.stages.forEach(function(stage){
+      document.getElementById(stage).style.display = "none"
+    });
+      document.getElementById(game.currentStage).style.display = "block"
+      this.showPanel(game)
+  }
 
 io.showPanel = function (game){
   game.panels[game.currentStage].forEach(function(panel){
