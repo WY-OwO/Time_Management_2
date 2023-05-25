@@ -78,5 +78,5 @@ io.showPanel = function (game){
   game.panels[game.currentStage].forEach(function(panel){
     document.getElementById(panel).display = "none"
   });
-    document.getElementById(game.currentPanel).style.display = "block"
+    document.getElementById(game.currentPanel).display = "block"
 }
