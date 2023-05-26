@@ -37,7 +37,7 @@ const narrativeManager = class {
       io.hideElement("resource2Row")
       io.hideElement("resource3Row")
       io.hideElement("showPanel2")
-      io.hideElement("resource4Number")
+      io.hideElement("resource4Display")
     }
   
   

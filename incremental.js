@@ -26,22 +26,36 @@ const GameInstance = class {
     gainResource2(){ this.resource2 +=1; this.resource1 -=5;this.updateDisplay();}
     gainResource3(){ this.resource3 +=1; this.resource1 -=3; this.resource2 -=1; this.updateDisplay()}
     
-    runResource2Work(){
-        this.resource1 += this.resource2;
+    runResource3Work(){
+      this.resource1 += this.resource3;
     }
     
       
     // this function takes in a panel 
     swichPanels(panel) {
       game.currentPanel = panel;
-      io.showPanel(game);    
+      io.showPanel(game.currentPanel);    
     }
     
     updateDisplay(){
       io.writeValueIntoClass(this.resource1, "resource1Number")
       io.writeValueIntoClass(this.resource2, "resource2Number")
       io.writeValueIntoClass(this.resource3, "resource3Number")
-      io.writeValueIntoClass(this.resource3, "resource4Number")
+      io.writeValueIntoClass(this.resource4, "resource4Number")
+    }
+
+    expand(amount) {
+      //check if they have enough
+
+      //do a coin flip (and store the result)
+
+      //if the coin flip is successful, add the value wagered
+      
+      //if the coin flip is unsuccessful, subtract the value wagered
+
+      //(You need a special check for if amount == -1 and do all in if so)
+
+      //log whether the coin flip was successful with io.appendIntoElement("[My Message]", "reports");
     }
     
   };
@@ -59,7 +73,7 @@ const GameInstance = class {
   
     // Run the Loop
     gameTimer = setInterval(function(){
-      game.runResource2Work();
+      game.runResource3Work();
       game.narrativeManager.assess()
       game.updateDisplay()
   }, 500)

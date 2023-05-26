@@ -7,7 +7,7 @@ io.writeIntoElement = function(value, id){
   document.getElementById(id).innerHTML = value;
 }
 io.appendIntoElement = function(value, id){
-  document.getElementById(id).innerHTML = document.getElementById(id).innerHTML + "<br>" + value;
+  document.getElementById(id).innerHTML = document.getElementById(id).innerHTML + value + "<br>";
 }
 
 
@@ -30,7 +30,7 @@ io.disableButton = function (id){
 }
 // modification for turning elements visible, invisible
 io.showElement = function (id){
-  document.getElementById(id).visibility = "visible"
+  document.getElementById(id).style.visibility = "visible"
 }
 
 io.hideElement = function (id){
