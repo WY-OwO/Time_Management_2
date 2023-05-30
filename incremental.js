@@ -53,7 +53,17 @@ const GameInstance = class {
         }
       }
       //do a coin flip (and store the result)
-
+      function click() {
+        x = (Math.floor(Math.random()*2)==0);
+        if(x){
+          resource4 += amount;
+          io.appendIntoElement("Your seagulls conquered land!","reports")
+        }else{
+          resource1 -= amount;
+          io.appendIntoElement("Your seagulls flew away...","reports")
+        }
+      }
+      
       //if the coin flip is successful, add the value wagered
       
       //if the coin flip is unsuccessful, subtract the value wagered
