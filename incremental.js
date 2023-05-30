@@ -46,7 +46,12 @@ const GameInstance = class {
 
     expand(amount) {
       //check if they have enough
-
+      if (amount !=-1) {
+        if (resource2 < amount) {
+          io.appendIntoElement("You do not have enough to execute the action.","reports")
+          return;
+        }
+      }
       //do a coin flip (and store the result)
 
       //if the coin flip is successful, add the value wagered
