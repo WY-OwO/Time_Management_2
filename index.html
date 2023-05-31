@@ -18,8 +18,8 @@ background-color: #beef
 #reports {
 overflow-y: scroll; 
 border: 1px solid black; 
-height: 100px; 
-width: 50%;
+height: 150px; 
+width: 70%;
 margin:auto;
 display: inline-block;
 }
@@ -30,7 +30,6 @@ display: inline-block;
 <body>
 <div id="reports" style=> </div> 
 <div class="stage" id="stage1" style="z-index: 1"> 
-
 
     <div class="panel" id="panel1"> 
         <h1> <span id=era>Calling of the Gulls</span></h1>
@@ -68,79 +67,81 @@ display: inline-block;
                             </td>
                             <td>Cost 1 Seagull + 3 Food; 2 Food found every second</td>
                         </tr>
+
+                        <tr id="resource5Row">
+                            <td> Word Spreader</td>
+                            <td></td>
+                            <td class="resource5Number"></td>
+                            <td>
+                                <button onclick=game.gainResource5()> Train Seagull</button>
+                            </td>
+                            <td>Cost 1 Seagull + 5 Food; Equivilant seagulls recruited every half-second</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
         </table>
     </div>
 
+    <div class="panel"  id="panel2">
+        <h1> Conquering of the Nations</h1>
+        <button onclick="game.swichPanels('panel1')" id="showPanel1"> Calling</button>
+        <button onclick="game.swichPanels('panel2')" id="showPanel2"> Conquering</button> 
+        <h3>Deploy the seagulls and conquer lands! Or... are they flying away? Oh... Take your chances!</h3>
+        <table>
+            <tr> 
+                <td>
+                    <table>
+                            <td> Seagulls</td>
+                            <td> </td>
+                            <td class="resource2Number"></td>
+                        </tr>
+                        <tr>
+                            <td> Km<sup>2</sup> of Land Conquered</td>
+                            <td> </td>
+                            <td class="resource4Number"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table>
+                <td>5</td>
+                <td> </td>
+                <td><button class="expand" onclick="game.expand(5)">Seagull</button></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td> </td>
+                <td><button class="expand" onclick="game.expand(10)">Seagull</button></td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td> </td>
+                <td><button class="expand" onclick="game.expand(50)">Seagull</button></td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td> </td>
+                <td><button class="expand" onclick="game.expand(100)">Seagull</button></td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td> </td>
+                <td><button class="expand" onclick="game.expand(300)">Seagull</button></td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td> </td>
+                <td><button class="expand" onclick="game.expand(500)">Seagull</button></td>
+            </tr>
+        </table> 
+    </div>
 </div>
 
 
 
-<!-- delete the following 2 panels if you structuring with sequential stages -->
-<div class="panel"  id="panel2">
-    <button onclick="game.swichPanels('panel1')" id="showPanel1"> Calling</button>
-    <button onclick="game.swichPanels('panel2')" id="showPanel2"> Conquering</button> 
-    <h1> Conquering of the Nations</h1>
-    <h3>Deploy the seagulls and conquer lands! Or... are they flying away? Oh... Take your chances!</h3>
-    <table>
-        <tr> 
-            <td>
-                <table>
-                    <tr>
-                        <td> Found Food</td> 
-                        <td> </td> 
-                        <td class="resource1Number"></td>
-                    </tr>
-                    <tr>
-                        <td> Seagulls</td>
-                        <td> </td>
-                        <td class="resource2Number"></td>
-                    </tr>
-                    <tr id="resource4Display">
-                        <td> Kilometer Square of Land Conquered</td>
-                        <td> </td>
-                        <td class="resource4Number"></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <table>
-            <td>5</td>
-            <td> </td>
-            <td><button class="expand" onclick="game.expand(5)">Seagull</button></td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td> </td>
-            <td><button class="expand" onclick="game.expand(10)">Seagull</button></td>
-        </tr>
-        <tr>
-            <td>50</td>
-            <td> </td>
-            <td><button class="expand" onclick="game.expand(50)">Seagull</button></td>
-        </tr>
-        <tr>
-            <td>100</td>
-            <td> </td>
-            <td><button class="expand" onclick="game.expand(100)">Seagull</button></td>
-        </tr>
-        <tr>
-            <td>300</td>
-            <td> </td>
-            <td><button class="expand" onclick="game.expand(300)">Seagull</button></td>
-        </tr>
-        <tr>
-            <td>500</td>
-            <td> </td>
-            <td><button class="expand" onclick="game.expand(500)">Seagull</button></td>
-        </tr>
-        <tr>
-            <td>Send them all!</td>
-            <td> </td>
-            <td><button class="expand" onclick="game.expand(-1)">Seagull</button></td>
-        </tr>
-    </table> 
-</div>
+
 
 
 

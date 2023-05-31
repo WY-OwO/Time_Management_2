@@ -8,6 +8,7 @@ io.writeIntoElement = function(value, id){
 }
 io.appendIntoElement = function(value, id){
   document.getElementById(id).innerHTML = document.getElementById(id).innerHTML + value + "<br>";
+  document.getElementById(id).scrollTop = document.getElementById(id).scrollHeight;
 }
 
 
@@ -87,9 +88,9 @@ io.showStage = function (game){
       this.showPanel(game)
   }
 
-io.showPanel = function (game){
-  game.panels[game.currentStage].forEach(function(panel){
-    document.getElementById(panel).style.display = "none"
-  });
-    document.getElementById(game.currentPanel).style.display = "block"
+io.showPanel= function (game){
+	game.panels[game.currentStage].forEach(function(panel){
+		document.getElementById(panel).style.display = "none"
+	});
+		document.getElementById(game.currentPanel).style.display = "block"
 }
