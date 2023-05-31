@@ -1,6 +1,6 @@
 // list which resources you want to track
 
-trackedValues = ["resource1", "resource2","resource3","resource4"]
+trackedValues = ["resource1", "resource2","resource3","resource4","resource5"]
 
 
 
