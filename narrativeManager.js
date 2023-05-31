@@ -40,31 +40,31 @@ const narrativeManager = class {
         triggered: false,
         test: function(data){return data.resource4 >=120},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to San Francisco!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to San Francisco!","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=160},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to the Easter Island!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to the Easter Island!","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=240},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to Kuala Lumpur, capital of Malaysia!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to Kuala Lumpur, capital of Malaysia!","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=350},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to Las Vegas!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to Las Vegas!","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=450},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to Oslo, capital of Norway!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to Oslo, capital of Norway!","reports");}
       },
       {
         triggered: false,
@@ -76,19 +76,19 @@ const narrativeManager = class {
         triggered: false,
         test: function(data){return data.resource4 >=690},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to Nuuk, capital of Greenland!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to Nuuk, capital of Greenland!","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=780},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to New York City!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to New York City!","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=810},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to Canberra, capital of Australia!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to Canberra, capital of Australia!","reports");}
       },
       {
         triggered: false,
@@ -100,19 +100,19 @@ const narrativeManager = class {
         triggered: false,
         test: function(data){return data.resource4 >=960},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to San Diego!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to San Diego!","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=1180},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to Rio de Janeiro, a well-known city in Brazil!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to Rio de Janeiro, a well-known city in Brazil!","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=1570},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to London, capital of England!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to London, capital of England!","reports");}
       },
       {
         triggered: false,
@@ -124,19 +124,19 @@ const narrativeManager = class {
         triggered: false,
         test: function(data){return data.resource4 >=2190},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to Tokyo, capital of Japan!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to Tokyo, capital of Japan!","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=2450},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to Cape Town, capital of South Africa!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to Cape Town, capital of South Africa!","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=2510},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to Moscow, capital of Russia!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to Moscow, capital of Russia!","reports");}
       },
       {
         triggered: false,
@@ -152,27 +152,69 @@ const narrativeManager = class {
       },
       {
         triggered: false,
+        test: function(data){return data.resource4 >=7500},
+        unlock: function(){},
+        report: function(){io.appendIntoElement("You have conquered over 7500 kilometer squared land. The seagull lord is really loving this game!","reports");}
+      },
+      {
+        triggered: false,
+        test: function(data){return data.resource4 >=10000},
+        unlock: function(){},
+        report: function(){io.appendIntoElement("You have conquered over 10000 kilometer squared land. The seagull lord is terrifying!","reports");}
+      },
+      {
+        triggered: false,
         test: function(data){return data.resource4 >=16410},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to Beijing, capital of China! This is serious dedication to an idle game assignment...","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to Beijing, capital of China! This is serious dedication to an idle game assignment...","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=20780},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to New York City!","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to New York City!","reports");}
       },
       {
         triggered: false,
         test: function(data){return data.resource4 >=348700},
         unlock: function(){},
-        report: function(){io.appendIntoElement("You have conquered the amount of land equivilant to the Great Barrier Reef! I hope you love the reef.","reports");}
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to the Great Barrier Reef! I hope you love the reef.","reports");}
       },
       {
         triggered: false,
-        test: function(data){return data.resource4 >=10000000},
+        test: function(data){return data.resource4 >=50000},
+        unlock: function(){},
+        report: function(){io.appendIntoElement("You have conquered over 50000 kilometer squared land. I am truly impressed you're sitting here for so long for this idle game.","reports");}
+      },
+      {
+        triggered: false,
+        test: function(data){return data.resource4 >=100000},
         unlock: function(){},
         report: function(){io.appendIntoElement("You're scaring me...","reports");}
+      },
+      {
+        triggered: false,
+        test: function(data){return data.resource4 >=150000},
+        unlock: function(){},
+        report: function(){io.appendIntoElement("You have conquered over 150000 kilometer squared land... Neat!","reports");}
+      },
+      {
+        triggered: false,
+        test: function(data){return data.resource4 >=268020},
+        unlock: function(){},
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to New Zealand!","reports");}
+      },
+      {
+        triggered: false,
+        test: function(data){return data.resource4 >=377970},
+        unlock: function(){},
+        report: function(){io.appendIntoElement("You have conquered the amount of land equivalent to Japan!","reports");}
+      },
+      {
+        triggered: false,
+        test: function(data){return data.resource4 >=1000000},
+        unlock: function(){},
+        report: function(){io.appendIntoElement("Your conquered land are in the millions now! You are a true lord!","reports");}
       }
     ]
     }
