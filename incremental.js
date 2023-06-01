@@ -30,6 +30,9 @@ const GameInstance = class {
       this.resource1 += this.resource3;
     }
     runResource5Work(){
+      if (this.resource1 < this.resource5){
+        return;
+      }
       this.resource2 += this.resource5;
       this.resource1 -= this.resource5;
     }
